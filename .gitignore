@@ -1,0 +1,7 @@
+lib/ 
+node_modules/ 
+dist/ 
+package.json 
+sound/ 
+yarn.lock
+*.exe

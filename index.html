@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./lib/p5.min.js"></script>
+        <script src="./lib/dust.js"></script>
+        <script src="./lib/pixi.min.js"></script>
+        <script src="./lib/sound.js"></script>
+        <title>Dancing now</title>
+    </head>
+    <body>
+        <div class="div-top">
+            <div id="div-body-startMenu">
+                <br>
+                <div class="div-startMenu-head">
+                        <h1 class="startMenu-title-font">Dancing now!</h1>
+                        <p>Just do it</p>
+                </div>
+                <br>
+                <div id="div-startMenu-middle">
+                    <button class="startMenu-op-button" id="click-start">Start</button><br>
+                    <button class="startMenu-op-button" id="click-option">Option</button><br>
+                    <button class="startMenu-op-button" id="click-about">About</button><br>
+                    <button class="startMenu-op-button" id="click-exit">Exit</button><br>
+                </div>
+                <div id="div-startMenu-middle-load">
+                    <div class="sk-rect sk-rect1"></div>
+                    <div class="sk-rect sk-rect2"></div>
+                    <div class="sk-rect sk-rect3"></div>
+                    <div class="sk-rect sk-rect4"></div>
+                    <div class="sk-rect sk-rect5"></div>
+                </div>
+                <div class="div-startMenu-bottom">
+                </div>
+            </div>
+            <div id="div-body-game">
+                <!game>
+            </div>
+            <div id="div-body-optionMenu">
+                <h1>OPTION</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Control:</h2>
+                <p>Up : ↑</p>
+                <p>Down : ↓</p>
+                <p>Left : ←</p>
+                <p>Right : →</p>
+                <p>Space : stop/start   game</p>
+                <br>
+                <br>
+                <h2>Sound:</h2>
+                <div class="slidecutainer">
+                    <a>-</a>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="sound-control">
+                    <a>+</a>
+                </div>
+            </div>
+            <div id="about-window" class="about">
+                <form class="about-content zoom-animate">
+                    <div class="imgcontainer">
+                        <span id="click-about-close" class="close-button" title="Close">&times;</span>
+                        <img src="./img/me.jpg" class="gameIcon">
+                    </div>
+                    <div style="text-align: center;">
+                        <p >Dancing now desktop game</p>
+                        <p>v1.00</p>
+                        <p>by Simonjan</p><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="div-background"><!bg></div>
+    </body>
+    <footer>
+        <div id="div-footer-left">
+            <button id="click-back" title="Game will be stop.">Back</button>
+            <button id="click-reset" title="Restart game">Restart</button>
+        </div>
+        <div id="div-footer-right"><p class="p-footer">Version: 1.00</p></div>
+    </footer>
+    <script src="./background.js"></script>
+<script src="./game.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</html>
+
